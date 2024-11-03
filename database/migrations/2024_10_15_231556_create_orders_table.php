@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('student_id')->constrained()->onDelete('cascade');
-            $table->foreignId('book_id')->constrained()->onDelete('cascade');
+            $table->foreignId('student_id')->constrained('students')->onDelete('cascade'); // Verifica se a tabela students existe
+            $table->foreignId('book_id')->constrained('books')->onDelete('cascade'); // Verifica se a tabela books existe
             $table->date('data_devolucao_prevista');
             $table->timestamps();
         });
