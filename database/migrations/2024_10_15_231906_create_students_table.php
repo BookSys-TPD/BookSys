@@ -14,9 +14,9 @@ class CreateStudentsTable extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->id();  // Chave primária
-            $table->string('name');  // Nome do aluno
-            $table->string('registration')->unique();  // Matrícula única
+            $table->id();
+            $table->string('matricula')->unique();
+            $table->string('nome');
             $table->timestamps();  // Campos created_at e updated_at
         });
     }
