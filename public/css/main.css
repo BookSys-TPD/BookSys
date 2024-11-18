@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+margin: 0;
+padding: 0;  
+font-family: 'Poppins', sans-serif;   
+color: #FFF;
+}
+
+body{
+    background-color: var(--background);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+
+.navbar{
+    background-color:  #FED238!important;
+}
+
+.navbar .navbar-collapse .nav-link, .offcanvas .nav-link{
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    gap: 500px!important;
+}
+
+.Services {
+  background: linear-gradient(90deg, #FFE45D 0%, #FFE45D 20%, #FFDC73 50%, #ffcb9a 100%);
+  font-family: 'Satisfy', cursive !important; 
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo-booksys {
+  font-family: 'Satisfy', cursive;
+  font-size: 36px;
+  color: #000000;
+}
+
+.card {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-color: #FED238;
+    border-radius: 15px;
+    padding: 15px;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.icon-box {
+    font-size: 90px; 
+    margin-right: 20px; 
+    color: #FFF; 
+}
+
+.card-title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
