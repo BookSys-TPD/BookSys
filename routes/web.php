@@ -16,5 +16,5 @@ Route::post('/books', [BookController::class, 'store'])->name('books.store');
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
 
 //Students
-Route::get('/students/create', [StudentController::class, 'create'])->name('students.create');
+Route::view('/students/create', 'students.create')->name('students.create');
 Route::post('/students', [StudentController::class, 'store'])->name('students.store');
