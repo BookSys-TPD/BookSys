@@ -17,7 +17,7 @@
   @yield('content')
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6A3eFIYlIevGmGCp3czhND3txW8FQOSfIW2RADVAnm9B"
+    integrity="sha384-tcVIG149aBzISCsRB5T5kncNw7lWyILqczpk9tUMeMvvA4Gm9Z05G9eYZvceU/EV"
     crossorigin="anonymous"></script>
 </body>
 
