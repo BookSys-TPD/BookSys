@@ -21,8 +21,12 @@ class  StudentController extends Controller
     ]);
 
     Student::create([
-        'matricula' => $request->matricula,
         'nome' => $request->nome,
+        'matricula'=> $request->matricula,
+        'endereco' => $request->endereco,
+        'cpf' => $request->cpf,
+        'telefone' => $request->telefone,
+        'email' => $request->email, 
     ]);
 
     return redirect()->route('students.create')->with('success', 'Estudante cadastrado com sucesso!');
