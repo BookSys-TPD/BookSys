@@ -6,9 +6,6 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\OrderController;
 
-//ORDER
-Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
-
 //BOOKS
 Route::view('/books/create', 'books.create')->name('books.create');
 Route::post('/books', [BookController::class, 'store'])->name('books.store');
