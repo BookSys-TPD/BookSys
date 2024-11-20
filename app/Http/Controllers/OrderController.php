@@ -9,11 +9,6 @@ use App\Models\Book;
 
 class OrderController extends Controller
 {
-  // Método para listar todos os empréstimos
-  public function index() {
-    $orders = Order::all(); // Carrega os dados dos relacionamentos
-    return view('orders.index', compact('orders'));
-  }
   
   public function store(Request $request) {
     // Validação dos dados do empréstimo
