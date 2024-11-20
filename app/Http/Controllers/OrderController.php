@@ -11,7 +11,6 @@ class OrderController extends Controller
 {
   
   public function store(Request $request) {
-    // Validação dos dados do empréstimo
     $request->validate([
         'student_id' => 'required|exists:students,id',
         'book_id' => 'required|exists:books,id',
@@ -19,7 +18,6 @@ class OrderController extends Controller
         'data_devolucao' => 'nullable|date|after:data_emprestimo'
     ]);
 
-    // Criação do empréstimo
     Order::create([
         'student_id' => $request->student_id,
         'book_id' => $request->book_id,
@@ -27,7 +25,6 @@ class OrderController extends Controller
         'data_devolucao' => $request->data_devolucao
     ]);
 
-    // Redireciona para uma página de sucesso ou lista de empréstimos
     return redirect()->route('orders.create')->with('success', 'Empréstimo registrado com sucesso!');
   }
 }
