@@ -8,6 +8,11 @@ use App\Models\Student;
 class  StudentController extends Controller
 {
 
+  public function create()
+  {
+      return view('students.create');
+  }
+
   public function store(Request $request) {
     $request->validate([
         'matricula' => 'required|unique:students|max:20',
