@@ -15,9 +15,11 @@ class  StudentController extends Controller
 
   public function store(Request $request) {
     $request->validate([
-        'matricula' => 'required|unique:students|max:20',
-        'cpf' => 'required|unique:students|digits:11',
-        'email' => 'required|email|unique:students|max:255',
+      'nome' => 'required|max:255',
+      'endereco' => 'required|max:255',
+      'cpf' => 'required|unique:students|digits:11',
+      'telefone' => 'required|max:15',
+      'email' => 'required|email|unique:students|max:255',
     ]);
 
     Student::create([
