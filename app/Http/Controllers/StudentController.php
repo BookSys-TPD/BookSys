@@ -7,11 +7,7 @@ use App\Models\Student;
 
 class  StudentController extends Controller
 {
-  public function index() {
-    $students = Student::all(); // Busca todos os estudantes
-    return view('students.index', compact('students'));
-  }
-  
+
   public function store(Request $request) {
     // Validação dos dados do estudante
     $request->validate([
