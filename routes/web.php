@@ -6,10 +6,6 @@ use App\Http\Controllers\BookController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\OrderController;
 
-
-//STUDENT
-Route::get('/students', [StudentController::class, 'index'])->name('students.index');
-
 //ORDER
 Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
 
