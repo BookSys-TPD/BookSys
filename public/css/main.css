@@ -232,3 +232,21 @@ input[type="submit"]:hover {
     color: #fff;
     border: none;
 }
+
+input.error {
+  border: 2px solid #d00104;
+  color: #d00104;
+}
+
+.alert {
+  color: #d00104;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 0 6px;
+}
+
+input:not(.error):focus {
+  outline: none;
+  border: 1px solid #fed238;
+}
