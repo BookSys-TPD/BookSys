@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 * {
-margin: 0;
-padding: 0;  
-font-family: 'Poppins', sans-serif;   
-color: #FFF;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
 }
 
-body{
+body {
     background-color: var(--background);
 }
 
@@ -21,58 +21,65 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px;
 }
 
-.navbar{
-    background-color:  #FED238!important;
+.navbar {
+    background-color: #fed238 !important;
 }
 
-.navbar .navbar-collapse .nav-link, .offcanvas .nav-link{
+.navbar .navbar-collapse .nav-link,
+.offcanvas .nav-link {
     color: #000000;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: 40px;
     letter-spacing: 0.5px;
-    gap: 500px!important;
+    gap: 500px !important;
 }
 
 .Services {
-  background: linear-gradient(90deg, #FFE45D 0%, #FFE45D 20%, #FFDC73 50%, #ffcb9a 100%);
-  font-family: 'Satisfy', cursive !important; 
-  color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
+    background: linear-gradient(
+        90deg,
+        #ffe45d 0%,
+        #ffe45d 20%,
+        #ffdc73 50%,
+        #ffcb9a 100%
+    );
+    font-family: "Satisfy", cursive !important;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .logo-booksys {
-  font-family: 'Satisfy', cursive;
-  font-size: 36px;
-  color: #000000;
+    font-family: "Satisfy", cursive;
+    font-size: 36px;
+    color: #000000;
 }
 
 .card {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     align-items: center;
-    background-color: #FED238;
+    background-color: #fed238;
     border-radius: 15px;
     padding: 15px;
-    color: #FFF;
+    color: #fff;
     cursor: pointer;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .icon-box {
-    font-size: 90px; 
-    margin-right: 20px; 
-    color: #FFF; 
+    font-size: 90px;
+    margin-right: 20px;
+    color: #fff;
 }
 
 .card-title {
-    color: #FFF;
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
 }
@@ -80,85 +87,89 @@ body::-webkit-scrollbar-thumb {
 form {
     width: 80%;
     margin: 20px auto;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  fieldset {
+}
+
+fieldset {
     border: 2px solid #000000;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  legend {
+}
+
+legend {
     font-weight: 500;
     font-size: 1.5rem;
     color: #333;
-  }
-  
-  .form-group .linha {
+}
+
+.form-group .linha {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 16px;
-  }
-  
-  .form-group .campo {
+}
+
+.form-group .campo {
     flex: 1;
-  }
-  
-  .col-4 {
+}
+
+.col-4 {
     flex: 0 0 33.33%;
   }
-  
-  .col-6 {
+
+.col-6 {
     flex: 0 0 50%;
-  }
-  
-  .col-8 {
+}
+
+.col-8 {
     flex: 0 0 66.66%;
-  }
-  
-  .col-12 {
+}
+
+.col-12 {
     flex: 0 0 100%;
-  }
-  
-  .campo label {
+}
+
+.campo label {
     display: block;
     margin-bottom: 4px;
-  }
-  
-  .campo input {
+}
+
+.campo input {
     width: 100%;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
-  }
-  
-  label {
+}
+
+label {
     font-size: 0.9rem;
     margin-right: 10px;
     color: #000000;
-    display: block!important;
+    display: block !important;
     margin-bottom: 2%;
-  }
-  
-  input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"] {
     width: 100%;
-    background-color: #EFEFEF;
-    padding: 15px; 
+    background-color: #efefef;
+    padding: 15px;
     font-size: 1rem;
-    border: 1px solid #EFEFEF;
+    border: 1px solid #efefef;
     border-radius: 5px;
     color: #333;
-  }
-  
-  input[type="submit"] {
-    background-color: #FED238;
+}
+
+input[type="submit"] {
+    background-color: #fed238;
     color: black;
     padding: 10px 20px;
     font-size: 1rem;
@@ -168,55 +179,56 @@ form {
     display: block;
     margin: 20px auto;
     width: 400px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #FED238;
+}
+
+input[type="submit"]:hover {
+    background-color: #fed238;
     color: #000000;
-  }
-  
-  /**/
-  .titulo {
+}
+
+/**/
+.titulo {
     font-size: 1.9rem;
     font-weight: 500;
     color: #000000;
-  }
-  
-  .btn-warning {
-    background-color: #FFD54F; 
+}
+
+.btn-warning {
+    background-color: #ffd54f;
     color: #fff;
     border: none;
     padding: 6px 25px;
-  }
-  
-  .btn-warning:hover{
+}
+
+.btn-warning:hover {
     color: #fff;
-  }
-  
-  .border-bottom {
-    border-bottom: 4px solid #FFD54F; 
-  }
-  
-  .table {
-    background-color: #f0f0f0; 
-  }
-  
-  .table-bordered th, .table-bordered td {
-    border: 1px solid #ddd; 
-  }
-  
-  .table-light th {
-    background-color: #e0e0e0; 
-  }
-  
-  .btn-secondary {
-    background-color: #9D9D9D;
+}
+
+.border-bottom {
+    border-bottom: 4px solid #ffd54f;
+}
+
+.table {
+    background-color: #f0f0f0;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #ddd;
+}
+
+.table-light th {
+    background-color: #e0e0e0;
+}
+
+.btn-secondary {
+    background-color: #9d9d9d;
     color: #fff;
     border: none;
-  }
-  
-  .btn-danger {
+}
+
+.btn-danger {
     background-color: red;
     color: #fff;
     border: none;
-  }  
+}
