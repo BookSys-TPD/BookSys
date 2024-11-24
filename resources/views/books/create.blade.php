@@ -3,7 +3,7 @@
 @section('title', 'Cadastro de Empréstimos')
 
 @section('content')
-<form action="{{ route('orders.store') }}" method="POST">
+<form action="{{ route('books.store') }}" method="POST">
   @csrf
   <legend>Cadastro de Livros</legend>
 
