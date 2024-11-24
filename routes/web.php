@@ -22,3 +22,4 @@ Route::post('/students', [StudentController::class, 'store'])->name('students.st
 //ORDER
 Route::view('/orders/create', 'orders.create')->name('orders.create');
 Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
+Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
