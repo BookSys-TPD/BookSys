@@ -16,7 +16,7 @@
             <i class='bx bxs-book-bookmark'></i>
           </div>
           <div class="card-body">
-            <h5 class="card-title">CADASTRAR LIVROS</h5>
+          <a href="{{ route('books.create') }}" class="card-title">CADASTRAR LIVROS</a>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@
             <i class='bx bx-transfer'></i>
           </div>
           <div class="card-body">
-            <h5 class="card-title">CADASTRAR EMPRÉSTIMOS</h5>
+          <a href="{{ route('orders.create') }}" class="card-title">CADASTRAR EMPRÉSTIMO</a>
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@
             <i class='bx bxs-user'></i>
           </div>
           <div class="card-body">
-            <h5 class="card-title">CADASTRAR ALUNOS</h5>
+          <a href="{{ route('students.create') }}" class="card-title">CADASTRAR ALUNOS</a>
           </div>
         </div>
       </div>
