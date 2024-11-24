@@ -20,7 +20,7 @@
         <th>Categoria</th>
         <th>ID Livro</th>
         <th>Editar</th>
-        <!-- <th>Devolução</th> -->
+        <th>Deletar</th>
       </tr>
     </thead>
     <tbody>
@@ -32,6 +32,14 @@
       <td>{{ $book->categoria }}</td>
       <td>{{ $book->id}}</td>
       <td><a href="{{ route('books.edit', $book->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
+      <td>
+          <button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete({{ $book->id }})">Deletar</button>
+
+          <form id="delete-form-{{ $book->id }}" action="{{ route('books.destroy', $book->id) }}" method="POST" style="display: none;">
+            @csrf
+            @method('DELETE')
+          </form>
+        </td>
       </td>
       </tr>
       @endforeach
