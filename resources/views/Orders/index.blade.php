@@ -20,6 +20,7 @@
         <th>Data Devolução</th>
         <th>ID Livro</th>
         <th>Editar</th>
+        <th>Deletar</th>
       </tr>
     </thead>
     <tbody>
@@ -31,6 +32,14 @@
       <td>{{ $order->data_devolucao_prevista }}</td>
       <td>{{ $order->book_id }}</td>
       <td><a href="{{ route('orders.edit', $order->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
+      <td>
+          <button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete({{ $order->id }})">Deletar</button>
+
+          <form id="delete-form-{{ $order->id }}" action="{{ route('orders.destroy', $order->id) }}" method="POST" style="display: none;">
+            @csrf
+            @method('DELETE')
+          </form>
+        </td>
       </form>
       </td>
       </tr>
