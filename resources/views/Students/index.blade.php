@@ -18,19 +18,28 @@
         <th>Nome</th>
         <th>Telefone</th>
         <th>Editar</th>
-        <!-- <th>Desativar</th> -->
+        <th>Deletar</th>
       </tr>
     </thead>
     <tbody>
       @foreach ($students as $student)
       <tr>
-      <td>{{ $student->id }}</td>
-      <td>{{ $student->nome }}</td>
-      <td>{{ $student->telefone }}</td>
-      <td><a href="{{ route('students.edit', $student->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
+        <td>{{ $student->id }}</td>
+        <td>{{ $student->nome }}</td>
+        <td>{{ $student->telefone }}</td>
+        <td><a href="{{ route('students.edit', $student->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm" onclick="confirmDelete({{ $student->id }})">Deletar</button>
+
+          <form id="delete-form-{{ $student->id }}" action="{{ route('students.destroy', $student->id) }}" method="POST" style="display: none;">
+            @csrf
+            @method('DELETE')
+          </form>
+        </td>
       </tr>
     @endforeach
     </tbody>
   </table>
 </div>
+
 @endsection
