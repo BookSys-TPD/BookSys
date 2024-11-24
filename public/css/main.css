@@ -312,3 +312,44 @@ input:focus {
   outline: none; 
   border: none;
 }
+
+/* SweetAlert */
+.swal2-popup {
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; 
+}
+
+.swal2-title {
+  color: #343a40; 
+  font-weight: bold;
+}
+
+.swal2-content {
+  color: #495057; 
+}
+
+.swal2-confirm {
+  background-color: #dc3545; 
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.swal2-cancel {
+  background-color: #6c757d; 
+  border: none;
+  color: #fff;
+}
+
+.swal2-popup button {
+  border-radius: 5px;
+}
+
+.swal2-container {
+  z-index: 9999; 
+}
+
+.swal2-checkbox {
+  display: none !important;
+}
