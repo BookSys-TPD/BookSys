@@ -17,8 +17,8 @@
         <th>Código</th>
         <th>Nome</th>
         <th>Telefone</th>
-        <!-- <th>Editar</th>
-        <th>Desativar</th> -->
+        <th>Editar</th>
+        <!-- <th>Desativar</th> -->
       </tr>
     </thead>
     <tbody>
@@ -27,6 +27,7 @@
       <td>{{ $student->id }}</td>
       <td>{{ $student->nome }}</td>
       <td>{{ $student->telefone }}</td>
+      <td><a href="{{ route('students.edit', $student->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
       </tr>
     @endforeach
     </tbody>
