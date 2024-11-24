@@ -14,6 +14,7 @@ Route::get('/', function () {
 Route::view('/books/create', 'books.create')->name('books.create');
 Route::post('/books', [BookController::class, 'store'])->name('books.store');
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
+Route::get('/books/{id}/edit', [BookController::class, 'edit'])->name('books.edit');
 
 //Students
 Route::view('/students/create', 'students.create')->name('students.create');
