@@ -19,6 +19,7 @@
         <th>Nome</th>
         <th>Data Devolução</th>
         <th>ID Livro</th>
+        <th>Editar</th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
       <td>{{ $order->student->nome }}</td>
       <td>{{ $order->data_devolucao_prevista }}</td>
       <td>{{ $order->book_id }}</td>
+      <td><a href="{{ route('orders.edit', $order->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
       </form>
       </td>
       </tr>
