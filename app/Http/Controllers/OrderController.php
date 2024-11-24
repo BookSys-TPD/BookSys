@@ -81,4 +81,10 @@ class OrderController extends Controller
 
     return redirect()->route('orders.index')->with('success', 'Empréstimo atualizado com sucesso!');
   }
+  public function destroy($id) {
+    $order = Order::findOrFail($id);
+    $order->delete(); 
+
+    return redirect()->route('orders.index')->with('success', 'Aluno deletado com sucesso!');
+}
 }
