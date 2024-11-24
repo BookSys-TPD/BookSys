@@ -84,6 +84,10 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
 form {
     width: 80%;
     margin: 20px auto;
