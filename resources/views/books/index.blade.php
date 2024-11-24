@@ -19,8 +19,8 @@
         <th>Autor</th>
         <th>Categoria</th>
         <th>ID Livro</th>
-        <!-- <th>Editar</th>
-        <th>Devolução</th> -->
+        <th>Editar</th>
+        <!-- <th>Devolução</th> -->
       </tr>
     </thead>
     <tbody>
@@ -31,6 +31,8 @@
       <td>{{ $book->autor }}</td>
       <td>{{ $book->categoria }}</td>
       <td>{{ $book->id}}</td>
+      <td><a href="{{ route('books.edit', $book->id) }}" class="btn btn-secondary btn-sm">Editar</a></td>
+      </td>
       </tr>
       @endforeach
     </tbody>
