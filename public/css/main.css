@@ -254,3 +254,61 @@ input:not(.error):focus {
   outline: none;
   border: 1px solid #fed238;
 }
+
+/*edit*/
+form {
+  margin-top: 50px; 
+  padding: 20px; 
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #000000;
+  display: block !important;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%; 
+  padding: 10px; 
+  font-size: 1rem;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+input:focus {
+  outline: none; 
+  border-color: #ffd54f; 
+  box-shadow: 0 0 5px rgba(255, 213, 79, 0.5); 
+}
+
+.btn-primary {
+  background-color: #ffd54f;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+}
+
+.btn-primary:hover {
+  background-color: #fed238; 
+  color: #000000;
+  border: none;
+}
+
+.btn-primary:focus {
+  outline: none; 
+  border: none;
+}
