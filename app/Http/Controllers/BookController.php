@@ -40,6 +40,12 @@ class BookController extends Controller
     $book = Book::findOrFail($id); // Encontra o livro pelo ID ou lança uma exceção
     return view('books.edit', compact('book')); // Retorna a view de edição com o livro específico
   }*/
+  public function edit($id)
+  {
+      $book = Book::findOrFail($id); 
+      return view('books.edit', compact('book'));   
+  }
+  
 
   // Método para atualizar os dados do livro
   public function update(Request $request, $id) {
