@@ -10,13 +10,13 @@
       </a>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
         <li class="nav-item">
-          <a class="nav-link" href="#">Livros</a>
+          <a class="nav-link" href="{{ route('books.index') }}">Livros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/aluno.html">Alunos</a>
+          <a class="nav-link" href="{{ route('students.index') }}">Alunos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Empréstimos</a>
+          <a class="nav-link" href="{{ route('orders.index') }}">Empréstimos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link me-2" href="#">Consulta Empréstimo</a>
