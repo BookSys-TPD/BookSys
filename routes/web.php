@@ -22,6 +22,7 @@ Route::view('/students/create', 'students.create')->name('students.create');
 Route::post('/students', [StudentController::class, 'store'])->name('students.store');
 Route::get('/students', action: [StudentController::class, 'index'])->name('students.index');
 Route::get('/students/{id}/edit', [StudentController::class, 'edit'])->name('students.edit');
+Route::put('/students/{id}', [StudentController::class, 'update'])->name('students.update');
 
 //ORDER
 Route::view('/orders/create', 'orders.create')->name('orders.create');
